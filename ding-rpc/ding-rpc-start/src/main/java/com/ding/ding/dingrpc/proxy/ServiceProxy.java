@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 /**
  * 服务代理（JDK 动态代理）
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
+ * @author ding
 
  */
 public class ServiceProxy implements InvocationHandler {

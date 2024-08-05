@@ -12,31 +12,27 @@
     <groupId>com.ding</groupId>
     <artifactId>example-provider</artifactId>
 
-
-
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-<!--    引入依赖-->
+<!--    引入RPC依赖-->
     <dependencies>
         <!--        初始简易版rpc框架依赖-->
-                <dependency>
-                    <groupId>com.ding</groupId>
-                    <artifactId>ding-rpc-start</artifactId>
-                    <version>1.0-SNAPSHOT</version>
-                </dependency>
+<!--                <dependency>-->
+<!--                    <groupId>com.ding</groupId>-->
+<!--                    <artifactId>ding-rpc-start</artifactId>-->
+<!--                    <version>1.0-SNAPSHOT</version>-->
+<!--                </dependency>-->
 
-
-
-        <!--        扩展版项目依赖-->
-<!--        <dependency>-->
-<!--            <groupId>com.ding</groupId>-->
-<!--            <artifactId>ding-rpc-core</artifactId>-->
-<!--            <version>1.0-SNAPSHOT</version>-->
-<!--        </dependency>-->
+        <!--        核心扩展版项目依赖-->
+        <dependency>
+            <groupId>com.ding</groupId>
+            <artifactId>ding-rpc-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>com.ding</groupId>
             <artifactId>example-common</artifactId>

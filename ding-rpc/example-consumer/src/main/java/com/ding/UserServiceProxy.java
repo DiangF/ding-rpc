@@ -1,9 +1,9 @@
 package com.ding;
 import com.ding.common.model.User;
-import com.ding.ding.dingrpc.model.RpcRequest;
-import com.ding.ding.dingrpc.model.RpcResponse;
-import com.ding.ding.dingrpc.serializer.JdkSerializer;
-import com.ding.ding.dingrpc.serializer.Serializer;
+import com.dingrpc.model.RpcRequest;
+import com.dingrpc.model.RpcResponse;
+import com.dingrpc.serializer.JdkSerializer;
+import com.dingrpc.serializer.Serializer;
 import com.ding.service.UserService;
 import cn.hutool.http.HttpRequest;
 import cn.hutool.http.HttpResponse;

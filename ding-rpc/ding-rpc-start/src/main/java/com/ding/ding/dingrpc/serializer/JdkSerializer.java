@@ -5,7 +5,7 @@ import java.io.*;
 /**
  * JDK 序列化器
  * @author ding
- * @author zhifeiding
+ *
  */
 public class JdkSerializer implements Serializer {
 

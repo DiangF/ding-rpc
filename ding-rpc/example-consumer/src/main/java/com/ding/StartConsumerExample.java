@@ -1,15 +1,19 @@
+/*
 package com.ding;
 import com.ding.common.model.User;
 import com.ding.ding.dingrpc.proxy.ServiceProxyFactory;
 import com.ding.service.UserService;
 
 public class StartConsumerExample {
-    /**
+    */
+/**
      *
      *
      * 消费者示例
      * @param args
-     */
+     * @author ding
+     *//*
+
 
     public static void main(String[] args) {
 //        UserService userService = new UserServiceProxy();  //静态代理
@@ -26,3 +30,4 @@ public class StartConsumerExample {
 
     }
 }
+*/

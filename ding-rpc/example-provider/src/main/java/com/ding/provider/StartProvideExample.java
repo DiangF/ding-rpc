@@ -1,8 +1,7 @@
+/*
 package com.ding.provider;
 
-import com.ding.ding.dingrpc.registry.LocalRegistry;
-import com.ding.ding.dingrpc.server.HttpServer;
-import com.ding.ding.dingrpc.server.VertexHttpServer;
+import com.dingrpc.registry.LocalRegistry;
 import com.ding.service.UserService;
 
 
@@ -19,3 +18,4 @@ public class StartProvideExample {
 
     }
 }
+*/

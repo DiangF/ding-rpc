@@ -1,0 +1,2 @@
+json=com.dingrpc.serializer.JsonSerializer
+kryo=com.dingrpc.serializer.KryoSerializer
