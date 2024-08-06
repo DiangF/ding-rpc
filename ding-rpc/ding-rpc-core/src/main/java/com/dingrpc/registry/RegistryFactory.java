@@ -16,7 +16,6 @@ public class RegistryFactory {
 
     }
 
-
     /**
      * 默认注册中心
      */
