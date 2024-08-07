@@ -2,6 +2,7 @@ package com.ding;
 
 import com.ding.common.model.User;
 import com.ding.service.UserService;
+import com.dingrpc.bootstrap.ConsumerBootstrap;
 import com.dingrpc.config.RpcConfig;
 import com.dingrpc.proxy.ServiceProxyFactory;
 import com.dingrpc.utils.ConfigUtils;
@@ -12,13 +13,12 @@ import com.dingrpc.utils.ConfigUtils;
  */
 public class ConsumerExample {
     public static void main(String[] args) {
-            //测试全局配置是否加载成功
-       /* RpcConfig rpc = ConfigUtils.loadConfig(RpcConfig.class,"rpc");
-        System.out.println(rpc);*/
-//        UserService userService = new UserServiceProxy();   //静态代理
+
+        ConsumerBootstrap.init();
+        //获取代理
         UserService userService = ServiceProxyFactory.getProxy(UserService.class);
         User user = new User();
-        user.setName("ding");
+        user.setName("dingzf");
         //调用
         User newUser = userService.getUser(user);
         if(newUser != null){

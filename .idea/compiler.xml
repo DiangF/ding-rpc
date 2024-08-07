@@ -7,10 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ding-rpc-core" />
+        <module name="demo-springboot-provider" />
         <module name="ding-rpc-start" />
         <module name="example-provider" />
+        <module name="demo-springboot-consumer" />
         <module name="example-common" />
+        <module name="ding-rpc-springboot-starter" />
+        <module name="ding-rpc-core" />
         <module name="example-consumer" />
       </profile>
     </annotationProcessing>

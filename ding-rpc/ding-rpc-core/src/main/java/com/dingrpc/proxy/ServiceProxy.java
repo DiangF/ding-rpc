@@ -64,16 +64,16 @@ public class ServiceProxy implements InvocationHandler {
 
 
             //发送TCP请求
-       /*     RpcResponse rpcResponse = VertxTcpClient.doRequest(rpcRequest,selectedServiceMetaInfo);
+            RpcResponse rpcResponse = VertxTcpClient.doRequest(rpcRequest,selectedServiceMetaInfo);
             return rpcResponse.getData();
           }
         catch (Exception e){
             throw  new RuntimeException("调用失败");
-        }*/
+        }
 
 
 //             发送Http请求   使用注册中心和服务发现机制解决
-            try (HttpResponse httpResponse = HttpRequest.post(selectedServiceMetaInfo.getServiceAddress())
+      /*      try (HttpResponse httpResponse = HttpRequest.post(selectedServiceMetaInfo.getServiceAddress())
                     .body(bodyBytes)
                     .execute()) {
                 byte[] result = httpResponse.bodyBytes();
@@ -84,7 +84,7 @@ public class ServiceProxy implements InvocationHandler {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return null;
+        return null;*/
 
 
 

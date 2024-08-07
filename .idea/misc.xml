@@ -5,6 +5,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/ding-rpc/pom.xml" />
+        <option value="$PROJECT_DIR$/ding-rpc/ding-rpc-springboot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/ding-rpc/demo-springboot-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/ding-rpc/demo-springboot-provider/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
