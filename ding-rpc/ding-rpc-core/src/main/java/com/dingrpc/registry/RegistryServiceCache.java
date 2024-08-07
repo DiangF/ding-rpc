@@ -29,7 +29,7 @@ public class RegistryServiceCache {
      * 读缓存
      */
 
-    List<ServiceMetaInfo> readCache() {
+    List<ServiceMetaInfo> readCache(String serviceKey) {
         return this.serviceCache;
     }
 

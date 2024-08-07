@@ -14,6 +14,7 @@ import com.dingrpc.registry.RegistryFactory;
 import com.dingrpc.serializer.JdkSerializer;
 import com.dingrpc.serializer.Serializer;
 import com.dingrpc.serializer.SerializerFactory;
+import com.dingrpc.server.tcp.VertxTcpClient;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationHandler;
@@ -61,7 +62,17 @@ public class ServiceProxy implements InvocationHandler {
             //先取一个
             ServiceMetaInfo selectedServiceMetaInfo = serviceMetaInfoList.get(0);
 
-            // 发送请求   使用注册中心和服务发现机制解决
+
+            //发送TCP请求
+       /*     RpcResponse rpcResponse = VertxTcpClient.doRequest(rpcRequest,selectedServiceMetaInfo);
+            return rpcResponse.getData();
+          }
+        catch (Exception e){
+            throw  new RuntimeException("调用失败");
+        }*/
+
+
+//             发送Http请求   使用注册中心和服务发现机制解决
             try (HttpResponse httpResponse = HttpRequest.post(selectedServiceMetaInfo.getServiceAddress())
                     .body(bodyBytes)
                     .execute()) {
@@ -74,5 +85,10 @@ public class ServiceProxy implements InvocationHandler {
             e.printStackTrace();
         }
         return null;
+
+
+
     }
+
+
 }
