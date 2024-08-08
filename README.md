@@ -2,8 +2,6 @@
 一款基于ETCD+Zookeeper+Spring实现的
 轻量级Java RPC框架。提供服务注册，发现，API调用，Spring集成和Spring Boot starter驱动注解的使用。
 类似与Dubbo服务端框架的模式，进行轻量级RPC框架开发。
-
--
 ## **RPC框架执行流程**  
 简述整个项目的调用流程
 ![](https://s3.bmp.ovh/imgs/2024/08/08/aef63ec16ff2ade7.jpg)
