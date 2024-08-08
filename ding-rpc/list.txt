@@ -1,0 +1,202 @@
+文件夹 PATH 列表
+卷序列号为 B0C2-E02E
+D:\CODING\JAVA\PROJECT\DING-RPC\DING-RPC
+├─demo-springboot-consumer
+│  ├─src
+│  │  ├─main
+│  │  │  └─java
+│  │  │      └─com
+│  │  │          └─ding
+│  │  │              └─demospringbootconsumer
+│  │  └─test
+│  │      └─java
+│  │          └─com
+│  │              └─ding
+│  │                  └─demospringbootconsumer
+│  └─target
+│      ├─classes
+│      │  └─com
+│      │      └─ding
+│      │          └─demospringbootconsumer
+│      ├─generated-sources
+│      │  └─annotations
+│      ├─generated-test-sources
+│      │  └─test-annotations
+│      └─test-classes
+│          └─com
+│              └─ding
+│                  └─demospringbootconsumer
+├─demo-springboot-provider
+│  ├─src
+│  │  ├─main
+│  │  │  └─java
+│  │  │      └─com
+│  │  │          └─ding
+│  │  │              └─demospringbootprovider
+│  │  └─test
+│  │      └─java
+│  │          └─com
+│  │              └─ding
+│  │                  └─demospringbootprovider
+│  └─target
+│      ├─classes
+│      │  └─com
+│      │      └─ding
+│      │          └─demospringbootprovider
+│      └─generated-sources
+│          └─annotations
+├─ding-rpc-core
+│  ├─src
+│  │  ├─main
+│  │  │  ├─java
+│  │  │  │  └─com
+│  │  │  │      └─dingrpc
+│  │  │  │          ├─bootstrap
+│  │  │  │          ├─config
+│  │  │  │          ├─constant
+│  │  │  │          ├─model
+│  │  │  │          ├─protocol
+│  │  │  │          ├─proxy
+│  │  │  │          ├─registry
+│  │  │  │          ├─serializer
+│  │  │  │          ├─server
+│  │  │  │          │  └─tcp
+│  │  │  │          ├─spi
+│  │  │  │          └─utils
+│  │  │  └─resources
+│  │  │      └─META-INF
+│  │  │          └─rpc
+│  │  │              ├─custome
+│  │  │              └─system
+│  │  └─test
+│  │      └─java
+│  │          └─com
+│  │              └─dingrpc
+│  │                  ├─protocol
+│  │                  └─registry
+│  └─target
+│      ├─classes
+│      │  ├─com
+│      │  │  └─dingrpc
+│      │  │      ├─bootstrap
+│      │  │      ├─config
+│      │  │      ├─constant
+│      │  │      ├─model
+│      │  │      ├─protocol
+│      │  │      ├─proxy
+│      │  │      ├─registry
+│      │  │      ├─serializer
+│      │  │      ├─server
+│      │  │      │  └─tcp
+│      │  │      ├─spi
+│      │  │      └─utils
+│      │  └─META-INF
+│      │      └─rpc
+│      │          ├─custome
+│      │          └─system
+│      ├─generated-sources
+│      │  └─annotations
+│      ├─generated-test-sources
+│      │  └─test-annotations
+│      └─test-classes
+│          └─com
+│              └─dingrpc
+│                  ├─protocol
+│                  └─registry
+├─ding-rpc-springboot-starter
+│  ├─src
+│  │  ├─main
+│  │  │  └─java
+│  │  │      └─com
+│  │  │          └─ding
+│  │  │              └─dingrpc
+│  │  │                  └─springboot
+│  │  │                      └─starter
+│  │  │                          ├─annotation
+│  │  │                          └─bootstrap
+│  │  └─test
+│  │      └─java
+│  │          └─com
+│  │              └─ding
+│  └─target
+│      ├─classes
+│      │  └─com
+│      │      └─ding
+│      │          └─dingrpc
+│      │              └─springboot
+│      │                  └─starter
+│      │                      ├─annotation
+│      │                      └─bootstrap
+│      └─generated-sources
+│          └─annotations
+├─ding-rpc-start
+│  ├─src
+│  │  └─main
+│  │      └─java
+│  │          └─com
+│  │              └─ding
+│  │                  └─ding
+│  │                      └─dingrpc
+│  │                          ├─model
+│  │                          ├─proxy
+│  │                          ├─registry
+│  │                          ├─serializer
+│  │                          └─server
+│  └─target
+│      ├─classes
+│      │  └─com
+│      │      └─ding
+│      │          └─ding
+│      │              └─dingrpc
+│      │                  ├─model
+│      │                  ├─proxy
+│      │                  ├─registry
+│      │                  ├─serializer
+│      │                  └─server
+│      └─generated-sources
+│          └─annotations
+├─example-common
+│  ├─src
+│  │  └─main
+│  │      └─java
+│  │          └─com
+│  │              └─ding
+│  │                  ├─common
+│  │                  │  └─model
+│  │                  └─service
+│  └─target
+│      ├─classes
+│      │  └─com
+│      │      └─ding
+│      │          ├─common
+│      │          │  └─model
+│      │          └─service
+│      └─generated-sources
+│          └─annotations
+├─example-consumer
+│  ├─src
+│  │  └─main
+│  │      ├─java
+│  │      │  └─com
+│  │      │      └─ding
+│  │      └─resources
+│  └─target
+│      ├─classes
+│      │  └─com
+│      │      └─ding
+│      └─generated-sources
+│          └─annotations
+└─example-provider
+    ├─src
+    │  └─main
+    │      └─java
+    │          └─com
+    │              └─ding
+    │                  └─provider
+    └─target
+        ├─classes
+        │  └─com
+        │      └─ding
+        │          └─provider
+        └─generated-sources
+            └─annotations
