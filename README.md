@@ -1,4 +1,5 @@
-# ding-rpc --- 轻量级RPC框架
+# ding-rpc --- 轻量级RPC框架  
+
 一款基于ETCD+Zookeeper+Spring实现的
 轻量级Java RPC框架。提供服务注册，发现，API调用，Spring集成和Spring Boot starter驱动注解的使用。
 类似与Dubbo服务端框架的模式，进行轻量级RPC框架开发。
@@ -6,7 +7,8 @@
 **RPC框架执行流程**  
 简述整个项目的调用流程
 ![](https://s3.bmp.ovh/imgs/2024/08/08/aef63ec16ff2ade7.jpg)
-### 具体的调用过程概括如下：  
+### 具体的调用过程概括如下：   
+
 1、服务消费者（client客户端）通过本地调用的方式调用服务  
 2、客户端存根（client stub）接收到调用请求后负责将方法、入参等信息序列化（组装）成能够进行网络传输的消息体  
 3、客户端存根（client stub）找到远程的服务地址，并且将消息通过网络发送给服务端  
