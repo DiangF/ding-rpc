@@ -33,7 +33,8 @@ public class ConfigUtils {
         if (StrUtil.isNotBlank(environment)) {
             configFileBuilder.append("-").append(environment);
         }
-        configFileBuilder.append(".properties");
+//        configFileBuilder.append(".properties");
+        configFileBuilder.append(".yml");
         Props props = new Props(configFileBuilder.toString());
         return props.toBean(tClass, prefix);
     }

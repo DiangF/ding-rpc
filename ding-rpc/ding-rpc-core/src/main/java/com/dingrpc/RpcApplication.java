@@ -7,13 +7,11 @@ import com.dingrpc.registry.Registry;
 import com.dingrpc.registry.RegistryFactory;
 import com.dingrpc.utils.ConfigUtils;
 import lombok.extern.slf4j.Slf4j;
-
-
 import com.dingrpc.config.RpcConfig;
 
 /**
  * RPC 框架应用
- * 相当于啊 handle，存放了项目全局用到的变量，
+ * 相当于handle，存放了项目全局用到的变量，
  * 采用双检索单例模式实现  ：不用每次需要配置文件就去加载，只需要在启动的时候加载一次，减少性能消耗开销
  * @author  ding
  *
@@ -65,9 +63,16 @@ public class RpcApplication {
      * @return
      */
 
+    /**
+     * 获取配置
+     * @return
+     */
     public static RpcConfig getRpcConfig(){
+        // 第一个判空（如果不是空，就不必再进入同步代码块了，提升效率）
         if(rpcConfig == null){
+            // 这里加锁，是为了防止多线程的情况下出现实例化多个对象的情况
             synchronized (RpcApplication.class){
+                // 第二个判空（如果是空，就实例化对象）
                 if(rpcConfig == null){
                     init();
                 }

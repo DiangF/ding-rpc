@@ -25,8 +25,6 @@ import java.util.List;
 public class ProviderExample {
     public static void main(String[] args)  {
 
-
-
         //注册的服务
         List<ServiceRegisterInfo<?>> serviceRegisterInfoList = new ArrayList<>();
         ServiceRegisterInfo<UserService> serviceRegisterInfo = new ServiceRegisterInfo<>(UserService.class.getName(),UserServiceImpl.class);

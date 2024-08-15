@@ -2,6 +2,9 @@ package com.dingrpc.config;
 
 
 
+import com.dingrpc.fault.retry.RetryStrategyKeys;
+import com.dingrpc.fault.tolerant.TolerantStrategyFactory;
+import com.dingrpc.fault.tolerant.TolerantStrategyKeys;
 import com.dingrpc.serializer.SerializerKeys;
 import lombok.Data;
 
@@ -45,5 +48,14 @@ public class RpcConfig {
      * 注册中心配置
      */
     private RegistryConfig registryConfig = new RegistryConfig();
+    /**
+     *重试策略
+     *
+     */
+    private String retryStrategy = RetryStrategyKeys.NO;
+    /**
+     * 容错策略
+     */
+    private String tolerantStrategy = TolerantStrategyKeys.FAIL_FAST;   //默认快速失败
 
 }

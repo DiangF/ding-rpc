@@ -16,7 +16,7 @@ public class VertexHttpServer implements HttpServer{
         io.vertx.core.http.HttpServer server = vertx.createHttpServer();
 
         // 监听端口并处理请求
-        server.requestHandler(new HttpServerHandler());
+        server.requestHandler(new HttpServerHandler());    //为web服务器绑定请求处理器
         // 启动 HTTP 服务器并监听指定端口
         server.listen(port, result -> {
             if (result.succeeded()) {

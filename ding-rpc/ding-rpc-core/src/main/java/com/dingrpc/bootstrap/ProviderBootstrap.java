@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * 服务提供者启动类（初始化）
  *
- * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
+ * @author ding
  */
 public class ProviderBootstrap {
 
