@@ -2,7 +2,6 @@
 一款基于ETCD+Zookeeper+Spring实现的
 轻量级Java RPC框架。提供服务注册，发现，API调用，Spring集成和Spring Boot starter驱动注解的使用。
 类似与Dubbo服务端框架的模式，进行轻量级RPC框架开发。
--
 ## **RPC框架执行流程**  
 简述整个项目的调用流程
 ![](https://s3.bmp.ovh/imgs/2024/08/11/987b80668a424ae8.png)
@@ -16,7 +15,6 @@
 7、服务端存根（server stub）将返回结果重新打包成消息（序列化）并通过网络发送至消费方
 8、客户端存根（client stub）接收到消息，并进行解码（反序列化）  
 9、服务消费方得到最终结果
----
 ### 项目目录结构
 ding-rpc框架
 ├─ding-rpc-core	--ding-rpc核心实现类  
