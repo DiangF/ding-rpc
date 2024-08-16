@@ -5,6 +5,7 @@ package com.dingrpc.config;
 import com.dingrpc.fault.retry.RetryStrategyKeys;
 import com.dingrpc.fault.tolerant.TolerantStrategyFactory;
 import com.dingrpc.fault.tolerant.TolerantStrategyKeys;
+import com.dingrpc.loadbalancer.LoadBalancerKeys;
 import com.dingrpc.serializer.SerializerKeys;
 import lombok.Data;
 
@@ -57,5 +58,10 @@ public class RpcConfig {
      * 容错策略
      */
     private String tolerantStrategy = TolerantStrategyKeys.FAIL_FAST;   //默认快速失败
+
+    /**
+     *   负载均衡器
+     */
+    private String loadBalancer = LoadBalancerKeys.ROUND_ROBIN;  //默认轮询
 
 }

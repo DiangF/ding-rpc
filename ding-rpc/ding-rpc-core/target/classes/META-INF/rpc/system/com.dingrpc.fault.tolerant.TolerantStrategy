@@ -1,0 +1,4 @@
+failBack=com.dingrpc.fault.tolerant.FailBackTolerantStrategy
+failFast=com.dingrpc.fault.tolerant.FailFastTolerantStrategy
+failOver=com.dingrpc.fault.tolerant.FailOverTolerantStrategy
+failSafe=com.dingrpc.fault.tolerant.FailSafeTolerantStrategy
