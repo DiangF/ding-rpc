@@ -66,7 +66,7 @@ public class ServiceProxy implements InvocationHandler {
             //先取一个
             ServiceMetaInfo selectedServiceMetaInfo = serviceMetaInfoList.get(0);
 
-            //rpc 请求
+            //rpc 请求 起始
             //发送TCP请求
             //重试机制
             RpcResponse rpcResponse ;  //使用重试机制
