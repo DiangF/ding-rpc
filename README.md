@@ -17,7 +17,7 @@
 ### 项目目录结构
 ding-rpc框架
 ├─ding-rpc-core	--ding-rpc核心实现类  
-├─ding-rpc-springboot-starter	--组件的spring-starter接入类  
+├─ding-rpc-springboot-starter	--组件的spring-boot-starter接入类  
 ├─example-consumer	--服务消费者  
 ├─example-common	--示例代码公共模块  
 └─example-provider	--服务提供者  
@@ -31,6 +31,10 @@ ding-rpc框架
 │  │  │  │          ├─bootstrap                  - > 服务消费者、提供者启动类   
 │  │  │  │          ├─config                     - > 项目配置（服务端、客户端属性配置）   
 │  │  │  │          ├─constant                   - > 项目常量  
+│  │  │  │          ├─fault                      - > 消费者调用接口异常   
+│  │  │  │          │  └─retry                   - > 重试机制  
+│  │  │  │          │  └─tolerant                - > 容错机制  
+│  │  │  │          ├─loadbalancer               - > 负载均衡  
 │  │  │  │          ├─model                      - > 封装一些返回公共信息   
 │  │  │  │          ├─protocol                   - > 协议消息处理器 编码 解码  
 │  │  │  │          ├─proxy                      - > 动态代理（JDK动态代理）  
